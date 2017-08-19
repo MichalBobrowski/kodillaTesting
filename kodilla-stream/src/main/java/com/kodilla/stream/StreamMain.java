@@ -1,23 +1,26 @@
 package com.kodilla.stream;
 
-import com.kodilla.stream.beautifier.PoeamBeautifier;
-import com.kodilla.stream.iterate.NumbersGenerator;
-import com.kodilla.stream.lambda.*;
-import com.kodilla.stream.reference.FunctionalCalculator;
+
+import com.kodilla.stream.forumuser.Forum;
+import com.kodilla.stream.forumuser.ForumUser;
+import java.time.LocalDate;
+import java.util.List;
+import java.util.Map;
+import java.util.stream.Collectors;
+
 
 public class StreamMain {
     public static void main(String[] args) {
-        /*ExpressionExecutor expressionExecutor = new ExpressionExecutor();
+        Map<Integer, ForumUser> resultMap0fForumUsers = Forum.getUsersList().stream()
+                .filter(user -> user.getSex() == 'M')
+                .filter(user -> user.getDateOfBirth().getYear() > 20)
+                .filter(user -> user.getPostNumber() > 0)
+                .collect(Collectors.toMap(ForumUser:: getId, user -> user));
 
-        PoeamBeautifier poeamBeautifier = new PoeamBeautifier();
+        resultMap0fForumUsers.entrySet().stream()
+                .map(entry -> entry.getKey() + " " + entry.getValue().getUserName())
+                .forEach(System.out::println);
 
-        poeamBeautifier.beautify("Zdanie do upiększenia", (text -> "ABC " + text + " ABC"));
-        poeamBeautifier.beautify("Zdanie do upiększenia", (text -> text.toUpperCase()));
-        poeamBeautifier.beautify("Zdanie do upiększenia", (text -> text.replace(" ", "KUM")));
-        poeamBeautifier.beautify("Zdanie do upiększenia", (text -> text.replaceAll("Zdanie", "Wyrażenie")));
-        */
-        System.out.println("Using Stream to generate even numbers from 1 to 20");
-        NumbersGenerator.generateEven(20);
 
     }
 }
