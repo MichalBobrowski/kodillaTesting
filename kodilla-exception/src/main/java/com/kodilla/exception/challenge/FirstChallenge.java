@@ -1,5 +1,7 @@
 package com.kodilla.exception.challenge;
 
+import javax.xml.bind.SchemaOutputResolver;
+
 public class FirstChallenge {
 
     public double divide(double a, double b) throws ArithmeticException {
@@ -22,6 +24,9 @@ public class FirstChallenge {
             System.out.println(result);
         } catch(ArithmeticException e) {
             System.out.println("Szanowny Panie, uprzejmie informuję, że nie wolno dzielić przez 0");
+        }
+        finally {
+            System.out.println("Wykonano próbę dzielenia");
         }
 
 
