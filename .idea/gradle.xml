@@ -11,10 +11,12 @@
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/kodilla-exception" />
             <option value="$PROJECT_DIR$/kodilla-good-patterns" />
+            <option value="$PROJECT_DIR$/kodilla-jdbc" />
             <option value="$PROJECT_DIR$/kodilla-stream" />
             <option value="$PROJECT_DIR$/kodilla-testing" />
           </set>
         </option>
+        <option name="useAutoImport" value="true" />
       </GradleProjectSettings>
       <GradleProjectSettings>
         <option name="createEmptyContentRootDirectories" value="true" />
