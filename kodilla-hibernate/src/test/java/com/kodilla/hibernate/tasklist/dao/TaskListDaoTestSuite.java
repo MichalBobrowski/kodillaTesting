@@ -19,7 +19,7 @@ public class TaskListDaoTestSuite {
     @Test
     public void testFindListNameByListName(){
         //given
-        /*final String NAME = "Nazwa";
+        final String NAME = "Nazwa";
         TaskList taskList = new TaskList(NAME, "Opis");
         taskListDao.save(taskList);
 
@@ -31,7 +31,7 @@ public class TaskListDaoTestSuite {
 
         //clean up
         int id = resultList.get(0).getId();
-        taskListDao.delete(id);*/
+        taskListDao.delete(id);
     }
 
 
