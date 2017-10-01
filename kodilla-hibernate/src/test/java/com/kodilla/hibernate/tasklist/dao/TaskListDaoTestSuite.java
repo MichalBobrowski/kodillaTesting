@@ -11,28 +11,27 @@ import org.springframework.test.context.junit4.SpringRunner;
 import java.util.List;
 
 @RunWith(SpringRunner.class)
-@SpringBootTest
+@SpringBootTest(classes = TaskListDao.class)
 public class TaskListDaoTestSuite {
     @Autowired
     private TaskListDao taskListDao;
 
     @Test
-    public void testFindByListName(){
+    public void testFindListNameByListName(){
         //given
         /*final String NAME = "Nazwa";
         TaskList taskList = new TaskList(NAME, "Opis");
         taskListDao.save(taskList);
 
         //when
-        List<TaskList> resultList = taskListDao.findByNameList(NAME);
+        List<TaskList> resultList = taskListDao.findTaskListsByListName(NAME);
 
         //then
         Assert.assertEquals(1, resultList.size());
 
         //clean up
         int id = resultList.get(0).getId();
-        taskListDao.delete(id);
-*/
+        taskListDao.delete(id);*/
     }
 
 
