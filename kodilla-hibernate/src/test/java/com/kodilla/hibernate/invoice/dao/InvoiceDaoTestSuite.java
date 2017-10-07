@@ -3,6 +3,7 @@ package com.kodilla.hibernate.invoice.dao;
 import com.kodilla.hibernate.invoice.Invoice;
 import com.kodilla.hibernate.invoice.Item;
 import com.kodilla.hibernate.invoice.Product;
+import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -25,7 +26,7 @@ public class InvoiceDaoTestSuite {
 
     @Test
     public void invoiceWithManyItemsTest (){
-        /*  //given
+        //given
         Product product1 = new Product("Młotek");
         Product product2 = new Product("Lopata");
         Product product3 = new Product("Wkrętarka");
@@ -41,8 +42,20 @@ public class InvoiceDaoTestSuite {
 
         //when
         invoiceDao.save(invoice);
-*/
+
+        int invoiceId = invoice.getId();
+        int itemNumbers = invoice.getItemList().size();
+
         //then
+        //Assert.assertEquals(0, invoiceId);
+        Assert.assertEquals(3, itemNumbers);
+
+        //clean up
+
+            invoiceDao.delete(invoiceId);
+
+
+
     }
 
 }

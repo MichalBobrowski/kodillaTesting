@@ -29,7 +29,7 @@ public class Item {
         @Id
         @GeneratedValue
         @NotNull
-        @Column(name = "Id")
+        @Column(name = "Item_Id")
         public int getId() {
             return id;
         }
@@ -76,12 +76,12 @@ public class Item {
             this.value = value;
         }
 
-      /*  @OneToMany(
-                targetEntity = Invoice.class,
-                mappedBy = "itemList",
-                cascade = CascadeType.ALL,
-                fetch = FetchType.LAZY
-        )*/
+        @ManyToMany(cascade =  CascadeType.ALL)
+        @JoinTable(
+               name = "JOIN_ITEM_INVOICES",
+               joinColumns = {@JoinColumn(name = "Item_Id" , referencedColumnName = "Item_Id")},
+               inverseJoinColumns = {@JoinColumn(name = "Invoice_Id" , referencedColumnName = "Invoice_Id")}
+        )
         public List<Invoice> getInvoice() {
         return invoiceList;
         }

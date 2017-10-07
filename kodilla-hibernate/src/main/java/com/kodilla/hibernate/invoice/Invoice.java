@@ -4,10 +4,16 @@ import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import java.util.List;
 
+@Entity
+@Table(name = "INVOICE")
 public class Invoice {
     private int id;
     private String number;
     private List<Item> itemList;
+
+    public Invoice(){
+
+    }
 
     public Invoice(String number, List<Item> itemList) {
         this.number = number;
@@ -17,7 +23,7 @@ public class Invoice {
     @Id
     @GeneratedValue
     @NotNull
-    @Column(name = "Id")
+    @Column(name = "Invoice_Id")
     public int getId() {
         return id;
     }
@@ -36,12 +42,8 @@ public class Invoice {
         this.number = number;
     }
 
-   /* @OneToMany(
-            targetEntity = Item.class,
-            mappedBy = "invoice",
-            cascade = CascadeType.ALL,
-            fetch = FetchType.LAZY
-    )*/
+    @ManyToMany (cascade = CascadeType.ALL, mappedBy = "invoiceList")
+    @Transient
     public List<Item> getItemList() {
         return itemList;
     }
