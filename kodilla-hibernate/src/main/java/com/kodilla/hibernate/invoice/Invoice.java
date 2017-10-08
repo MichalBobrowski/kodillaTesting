@@ -42,8 +42,7 @@ public class Invoice {
         this.number = number;
     }
 
-    @ManyToMany (cascade = CascadeType.ALL, mappedBy = "invoiceList")
-    @Transient
+    @ManyToMany (cascade = CascadeType.ALL, mappedBy = "invoiceList", fetch = FetchType.EAGER)
     public List<Item> getItemList() {
         return itemList;
     }

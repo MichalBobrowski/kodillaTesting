@@ -38,7 +38,8 @@ public class Item {
             this.id = id;
         }
 
-        @ManyToOne
+        @ManyToOne (cascade = { CascadeType.PERSIST, CascadeType.MERGE})
+        @JoinColumn(name = "Product")
         public Product getProduct() {
             return product;
         }
@@ -76,17 +77,17 @@ public class Item {
             this.value = value;
         }
 
-        @ManyToMany(cascade =  CascadeType.ALL)
+        @ManyToMany(cascade =  CascadeType.PERSIST)
         @JoinTable(
                name = "JOIN_ITEM_INVOICES",
                joinColumns = {@JoinColumn(name = "Item_Id" , referencedColumnName = "Item_Id")},
                inverseJoinColumns = {@JoinColumn(name = "Invoice_Id" , referencedColumnName = "Invoice_Id")}
         )
-        public List<Invoice> getInvoice() {
+        public List<Invoice> getInvoiceList() {
         return invoiceList;
         }
 
-        private void setInvoice(List<Invoice> invoiceList) {
+        private void setInvoiceList(List<Invoice> invoiceList) {
             this.invoiceList = invoiceList;
         }
 }

@@ -9,7 +9,7 @@ import java.util.List;
 public class Product {
     private int id;
     private String name;
-    private List<Item> itemLis;
+    private List<Item> itemList;
 
     public Product(){
 
@@ -47,11 +47,11 @@ public class Product {
             cascade = CascadeType.ALL,
             fetch = FetchType.LAZY
     )
-    public List<Item> getItemLis() {
-        return itemLis;
+    public List<Item> getItemList() {
+        return itemList;
     }
 
-    private void setItemLis(List<Item> itemLis) {
-        this.itemLis = itemLis;
+    private void setItemList(List<Item> itemLis) {
+        this.itemList = itemLis;
     }
 }

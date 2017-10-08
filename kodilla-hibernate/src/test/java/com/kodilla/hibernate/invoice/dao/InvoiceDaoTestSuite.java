@@ -41,18 +41,16 @@ public class InvoiceDaoTestSuite {
         Invoice invoice = new Invoice("1/2017", itemList);
 
         //when
-        invoiceDao.save(invoice);
+        Invoice result = invoiceDao.save(invoice);
 
-        int invoiceId = invoice.getId();
-        int itemNumbers = invoice.getItemList().size();
+        int itemNumbers = invoiceDao.findOne(result.getId()).getItemList().size();
 
         //then
-        //Assert.assertEquals(0, invoiceId);
         Assert.assertEquals(3, itemNumbers);
 
         //clean up
 
-            invoiceDao.delete(invoiceId);
+            invoiceDao.delete(result.getId());
 
 
 
