@@ -42,7 +42,12 @@ public class Invoice {
         this.number = number;
     }
 
-    @ManyToMany (cascade = CascadeType.ALL, mappedBy = "invoiceList", fetch = FetchType.EAGER)
+    @ManyToMany(cascade = {CascadeType.PERSIST, CascadeType.MERGE}, fetch = FetchType.EAGER)
+    @JoinTable(
+            name = "JOIN_ITEM_INVOICES",
+            joinColumns = {@JoinColumn(name = "Invoice_Id" , referencedColumnName = "Invoice_Id")},
+            inverseJoinColumns = {@JoinColumn(name = "Item_Id" , referencedColumnName = "Item_Id")}
+    )
     public List<Item> getItemList() {
         return itemList;
     }

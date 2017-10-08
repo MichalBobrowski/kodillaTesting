@@ -77,12 +77,9 @@ public class Item {
             this.value = value;
         }
 
-        @ManyToMany(cascade =  CascadeType.PERSIST)
-        @JoinTable(
-               name = "JOIN_ITEM_INVOICES",
-               joinColumns = {@JoinColumn(name = "Item_Id" , referencedColumnName = "Item_Id")},
-               inverseJoinColumns = {@JoinColumn(name = "Invoice_Id" , referencedColumnName = "Invoice_Id")}
-        )
+        @ManyToMany (cascade = { CascadeType.MERGE, CascadeType.PERSIST},
+                    mappedBy = "itemList",
+                    fetch = FetchType.EAGER)
         public List<Invoice> getInvoiceList() {
         return invoiceList;
         }
