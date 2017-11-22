@@ -10,6 +10,8 @@
       <module name="kodilla-hibernate_test" target="1.8" />
       <module name="kodilla-jdbc_main" target="1.8" />
       <module name="kodilla-jdbc_test" target="1.8" />
+      <module name="kodilla-patterns2_main" target="1.8" />
+      <module name="kodilla-patterns2_test" target="1.8" />
       <module name="kodilla-patterns_main" target="1.8" />
       <module name="kodilla-patterns_test" target="1.8" />
       <module name="kodilla-spring-web_main" target="1.8" />
