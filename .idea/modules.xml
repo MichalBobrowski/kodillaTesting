@@ -30,6 +30,9 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/kodilla-stream/kodilla-stream_main.iml" filepath="$PROJECT_DIR$/.idea/modules/kodilla-stream/kodilla-stream_main.iml" group="kodilla-stream" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/kodilla-stream/kodilla-stream_test.iml" filepath="$PROJECT_DIR$/.idea/modules/kodilla-stream/kodilla-stream_test.iml" group="kodilla-stream" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/kodilla-testing/kodilla-testing.iml" filepath="$PROJECT_DIR$/.idea/modules/kodilla-testing/kodilla-testing.iml" group="kodilla-testing" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/kodilla-testing2.iml" filepath="$PROJECT_DIR$/.idea/modules/kodilla-testing2.iml" group="kodilla-testing2" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/kodilla-testing2/kodilla-testing2_main.iml" filepath="$PROJECT_DIR$/.idea/modules/kodilla-testing2/kodilla-testing2_main.iml" group="kodilla-testing2" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/kodilla-testing2/kodilla-testing2_test.iml" filepath="$PROJECT_DIR$/.idea/modules/kodilla-testing2/kodilla-testing2_test.iml" group="kodilla-testing2" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/kodilla-testing/kodilla-testing_main.iml" filepath="$PROJECT_DIR$/.idea/modules/kodilla-testing/kodilla-testing_main.iml" group="kodilla-testing" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/kodilla-testing/kodilla-testing_test.iml" filepath="$PROJECT_DIR$/.idea/modules/kodilla-testing/kodilla-testing_test.iml" group="kodilla-testing" />
       <module fileurl="file://$PROJECT_DIR$/kurs.iml" filepath="$PROJECT_DIR$/kurs.iml" />

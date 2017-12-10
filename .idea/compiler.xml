@@ -20,6 +20,8 @@
       <module name="kodilla-spring_test" target="1.8" />
       <module name="kodilla-stream_main" target="1.8" />
       <module name="kodilla-stream_test" target="1.8" />
+      <module name="kodilla-testing2_main" target="1.8" />
+      <module name="kodilla-testing2_test" target="1.8" />
       <module name="kodilla-testing_main" target="1.8" />
       <module name="kodilla-testing_test" target="1.8" />
       <module name="kurs_main" target="1.8" />
