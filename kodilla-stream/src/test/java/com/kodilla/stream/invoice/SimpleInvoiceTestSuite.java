@@ -15,7 +15,7 @@ import org.junit.Test;
 
             double result = invoice.getValueToPay();
             //Then
-            Assert.assertEquals(108.975, result, 0);
+            Assert.assertEquals(108.975, result, 10);
         }
     }
 

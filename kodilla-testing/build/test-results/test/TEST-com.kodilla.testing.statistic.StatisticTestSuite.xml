@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.kodilla.testing.statistic.StatisticTestSuite" tests="9" skipped="0" failures="0" errors="0" timestamp="2017-08-19T17:23:30" hostname="DESKTOP-V51MGL0" time="0.031">
+<testsuite name="com.kodilla.testing.statistic.StatisticTestSuite" tests="9" skipped="0" failures="0" errors="0" timestamp="2017-12-12T10:51:57" hostname="DESKTOP-V51MGL0" time="0.051">
   <properties/>
-  <testcase name="testCalculateMemberNumberZero" classname="com.kodilla.testing.statistic.StatisticTestSuite" time="0.011"/>
-  <testcase name="testCalculateaverageCommentsPerUser" classname="com.kodilla.testing.statistic.StatisticTestSuite" time="0.002"/>
-  <testcase name="testCalculateaverageCommentsPerPostMoreComments" classname="com.kodilla.testing.statistic.StatisticTestSuite" time="0.001"/>
-  <testcase name="testCalculatePostsNumberZero" classname="com.kodilla.testing.statistic.StatisticTestSuite" time="0.001"/>
+  <testcase name="testCalculateMemberNumberZero" classname="com.kodilla.testing.statistic.StatisticTestSuite" time="0.016"/>
+  <testcase name="testCalculateaverageCommentsPerUser" classname="com.kodilla.testing.statistic.StatisticTestSuite" time="0.006"/>
+  <testcase name="testCalculateaverageCommentsPerPostMoreComments" classname="com.kodilla.testing.statistic.StatisticTestSuite" time="0.002"/>
+  <testcase name="testCalculatePostsNumberZero" classname="com.kodilla.testing.statistic.StatisticTestSuite" time="0.003"/>
   <testcase name="testCalculatePostsNumberNormal" classname="com.kodilla.testing.statistic.StatisticTestSuite" time="0.001"/>
   <testcase name="testCalculateMemberNumberNormal" classname="com.kodilla.testing.statistic.StatisticTestSuite" time="0.002"/>
-  <testcase name="testCalculateaverageCommentsPerPostMorePosts" classname="com.kodilla.testing.statistic.StatisticTestSuite" time="0.002"/>
+  <testcase name="testCalculateaverageCommentsPerPostMorePosts" classname="com.kodilla.testing.statistic.StatisticTestSuite" time="0.001"/>
   <testcase name="testCalculateCommentsNumberZero" classname="com.kodilla.testing.statistic.StatisticTestSuite" time="0.002"/>
   <testcase name="testCalculateAveragePostsPerUser" classname="com.kodilla.testing.statistic.StatisticTestSuite" time="0.002"/>
   <system-out><![CDATA[]]></system-out>
