@@ -98,26 +98,18 @@ public class CrudAppTestSuite {
 
         return result;
     }
-//html/body/main/section[2]/div/form[2]/div/fieldset[1]/button[4]
+
     public void cleanUpCrudApp(String taskName){
-        final String taskNameField = "//.button[4]";
-        final String searchXpath = "//fieldset[1]/p[@class = \"datatable__field-value\"]";
+        final String formXpath = "//form[@class=\"datatable__row\"]";
+        final String pXpath = ".//p[@class = \"datatable__field-value\"]";
+        final String deleteButtonXpath = "./div/fieldset[1]/button[4]";
 
-       final String taskName2 = "DeleteTask";
-
-                driver.findElements((By.xpath(searchXpath))).stream()
-                .filter(something -> something.getText().contains(taskName2))
-                    /*{System.out.println(something.getText()); //+ "Jestem tu 2");
-                    if(something.getText().contains(taskName2)) System.out.println(something);
-                    return something.getText().contains(taskName2);
-                })*/
-                .map(x -> {
-                    System.out.println(x.getTagName() + " Tag name");
-                    System.out.println(x.getText() + " Text");
-                    WebElement delbut= x.findElement(By.xpath(taskNameField));
-                    System.out.println(delbut.getText() + " TU TU 2");
-                    return  delbut;})
-                .forEach(deleteButton -> deleteButton.click());
+                driver.findElements(By.xpath(formXpath)).stream()
+                        .filter(form -> form.findElement(By.xpath(pXpath))
+                                .getText().equals(taskName))
+                        .forEach(form -> {
+                            form.findElement(By.xpath(deleteButtonXpath)).click();
+                        });
 
     }
 

@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/kodilla-testing2/src/test/java/com/kodilla/testing2/crudapp/CrudAppTestSuite.java" line="109" />
-  </component>
   <component name="ChangeListManager">
     <list default="true" id="366376a5-f08f-4f02-89b7-0a1ea0aa6b44" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kodilla-testing2/src/test/java/com/kodilla/testing2/crudapp/CrudAppTestSuite.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kodilla-testing2/src/test/java/com/kodilla/testing2/crudapp/CrudAppTestSuite.java" afterPath="$PROJECT_DIR$/kodilla-testing2/src/test/java/com/kodilla/testing2/crudapp/CrudAppTestSuite.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -97,8 +94,8 @@
       <file leaf-file-name="CrudAppTestSuite.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/kodilla-testing2/src/test/java/com/kodilla/testing2/crudapp/CrudAppTestSuite.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="141">
-              <caret line="105" column="23" lean-forward="false" selection-start-line="105" selection-start-column="23" selection-end-line="105" selection-end-column="23" />
+            <state relative-caret-position="204">
+              <caret line="106" column="65" lean-forward="true" selection-start-line="106" selection-start-column="65" selection-end-line="106" selection-end-column="65" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -3149,6 +3146,7 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
@@ -3162,7 +3160,6 @@
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -3522,14 +3519,12 @@
       <workItem from="1513072950534" duration="3079000" />
       <workItem from="1513076600633" duration="1511000" />
       <workItem from="1513297948801" duration="20829000" />
-      <workItem from="1513536754670" duration="9867000" />
+      <workItem from="1513536754670" duration="11283000" />
+      <workItem from="1513639528802" duration="679000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CrudAppTestSuite_shouldCreateTrelloCard - 2017.12.17 at 22h 02m 07s.xml">
-      <configuration name="CrudAppTestSuite.shouldCreateTrelloCard" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="CrudAppTestSuite_shouldCreateTrelloCard - 2017.12.17 at 22h 09m 15s.xml">
       <configuration name="CrudAppTestSuite.shouldCreateTrelloCard" configurationId="JUnit" />
     </history-entry>
@@ -3557,9 +3552,12 @@
     <history-entry file="CrudAppTestSuite_shouldCreateTrelloCard - 2017.12.17 at 22h 39m 38s.xml">
       <configuration name="CrudAppTestSuite.shouldCreateTrelloCard" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="CrudAppTestSuite_shouldCreateTrelloCard - 2017.12.19 at 00h 33m 33s.xml">
+      <configuration name="CrudAppTestSuite.shouldCreateTrelloCard" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="304613000" />
+    <option name="totallyTimeSpent" value="306708000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -3588,7 +3586,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41118422" sideWeight="0.4924357" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20196672" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20499243" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329429" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -4020,7 +4018,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -4060,8 +4057,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/kodilla-testing2/src/test/java/com/kodilla/testing2/crudapp/CrudAppTestSuite.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="105" column="23" lean-forward="false" selection-start-line="105" selection-start-column="23" selection-end-line="105" selection-end-column="23" />
+        <state relative-caret-position="204">
+          <caret line="106" column="65" lean-forward="true" selection-start-line="106" selection-start-column="65" selection-end-line="106" selection-end-column="65" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
